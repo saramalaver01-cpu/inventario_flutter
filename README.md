@@ -1,4 +1,4 @@
-\# Sistema de Gestión de Inventario
+# Sistema de Gestión de Inventario
 
 
 
@@ -6,59 +6,59 @@ Aplicación de gestión de inventario desarrollada con Flutter y una API REST cr
 
 
 
-\## Funcionalidades
+# Funcionalidades
 
 
 
-\- Consultar el listado de productos.
+- Consultar el listado de productos.
 
-\- Ver los detalles de un producto.
+- Ver los detalles de un producto.
 
-\- Registrar productos nuevos.
+- Registrar productos nuevos.
 
-\- Editar productos existentes.
+- Editar productos existentes.
 
-\- Eliminar productos.
+- Eliminar productos.
 
-\- Validar los datos antes de guardarlos.
+- Validar los datos antes de guardarlos.
 
-\- Evitar códigos de producto duplicados.
+- Evitar códigos de producto duplicados.
 
-\- Consultar estadísticas generales del inventario desde el dashboard.
+- Consultar estadísticas generales del inventario desde el dashboard.
 
-\- Guardar la información en una base de datos SQLite.
-
-
-
-\## Tecnologías utilizadas
+- Guardar la información en una base de datos SQLite.
 
 
 
-\### Frontend
-
-\- Flutter
-
-\- Dart
-
-\- Dio para las solicitudes HTTP.
-
-\- go\_router para la navegación.
-
-\- flutter\_dotenv para la configuración de la URL de la API.
+# Tecnologías utilizadas
 
 
 
-\### Backend
+# Frontend
 
-\- Node.js
+- Flutter
 
-\- Express
+- Dart
 
-\- SQLite mediante better-sqlite3.
+- Dio para las solicitudes HTTP.
+
+- go\_router para la navegación.
+
+- flutter\_dotenv para la configuración de la URL de la API.
 
 
 
-\## Estructura del proyecto
+# Backend
+
+- Node.js
+
+- Express
+
+- SQLite mediante better-sqlite3.
+
+
+
+# Estructura del proyecto
 
 
 
@@ -94,19 +94,19 @@ inventario\_flutter/
 
 
 
-\## Requisitos previos
+# Requisitos previos
 
 
 
-\- Node.js y npm.
+- Node.js y npm.
 
-\- Flutter y Dart.
+- Flutter y Dart.
 
-\- Android Studio o un emulador Android, si se ejecuta la aplicación en un emulador.
+- Android Studio o un emulador Android, si se ejecuta la aplicación en un emulador.
 
 
 
-\## Instalación y ejecución del backend
+# Instalación y ejecución del backend
 
 
 
@@ -170,7 +170,7 @@ Las solicitudes y respuestas de la API utilizan JSON.
 
 
 
-\## Datos de prueba
+# Datos de prueba
 
 
 
@@ -190,7 +190,7 @@ El script utiliza `INSERT OR IGNORE` para evitar insertar nuevamente productos c
 
 
 
-\## Instalación y ejecución del frontend
+# Instalación y ejecución del frontend
 
 
 
@@ -240,7 +240,7 @@ Si se utiliza un dispositivo físico, configura `API\_URL` con la dirección IP 
 
 
 
-\## Validaciones de la API
+# Validaciones de la API
 
 
 
@@ -248,27 +248,19 @@ Se verificaron respuestas HTTP para las siguientes situaciones:
 
 
 
-\- `404`: consulta de un producto inexistente.
+- `404`: consulta de un producto inexistente.
 
-\- `422`: solicitud de creación con datos obligatorios ausentes.
+- `422`: solicitud de creación con datos obligatorios ausentes.
 
-\- `422`: intento de registrar un código de producto duplicado.
+- `422`: intento de registrar un código de producto duplicado.
 
 
 
-\## Persistencia de datos
+# Persistencia de datos
 
 
 
 La API utiliza SQLite para almacenar los productos. La base de datos se crea localmente cuando el backend la inicializa. El archivo de la base de datos local no se incluye en el repositorio; los datos de prueba pueden generarse mediante `sembrar.js`.
-
-
-
-\## Autoría
-
-
-
-Proyecto académico de Ingeniería de Sistemas.
 
 
 
